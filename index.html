@@ -352,6 +352,54 @@ gap: 1rem;
                 <div class="grid-section__container-item">6</div>
             </div>
         </section>
+        <section class="grid-section">
+            <h2 class="grid-section__title">Grid Areas</h2>
+            <p class="grid-section__description">This code creates a grid container with three columns and four rows, and
+                specifies the grid-template-areas property to divide it into areas. It also sets the grid-area property for each
+                item to specify where it should be placed.</p>
+            <pre class="grid-section__code">
+        .grid-section__container-areas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        grid-template-areas:
+        "header header header"
+        "news news aside"
+        "promo promo aside"
+        ". footer footer";
+        }
+
+        .header {
+        grid-area: header;
+        }
+
+        .news {
+        grid-area: news;
+        }
+
+        .promo {
+        grid-area: promo;
+        }
+
+        .aside {
+        grid-area: aside;
+        }
+
+        .footer {
+        grid-area: footer;
+        }
+
+        </pre>
+
+            <div class="grid-section__container-areas">
+                <div class="grid-section__container-item header">Header</div>
+                <div class="grid-section__container-item news">News</div>
+                <div class="grid-section__container-item promo">Promo</div>
+                <div class="grid-section__container-item aside">Aside</div>
+                <div class="grid-section__container-item footer">Footer</div>
+            </div>
+        </section>
     </div>
 
 </body>

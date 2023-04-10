@@ -166,12 +166,44 @@
 
 .grid-section__container-span-keyword {
     display: grid;
-        grid-template-columns: 200px 300px 150px;
-        grid-template-rows: 100px 200px;
-        grid-gap: 10px;
+    grid-template-columns: 200px 300px 150px;
+    grid-template-rows: 100px 200px;
+    grid-gap: 10px;
 }
 
 .grid-item--big3 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+}
+
+.grid-section__container-areas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "news news aside"
+        "promo promo aside"
+        ". footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.news {
+    grid-area: news;
+}
+
+.promo {
+    grid-area: promo;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
 }
