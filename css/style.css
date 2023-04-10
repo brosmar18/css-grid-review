@@ -138,3 +138,15 @@
     grid-template-rows: repeat(4, 100px);
     gap: 1rem;
 }
+
+.grid-section__container-comumn-start-end{
+    display: grid;
+        grid-template-columns: 150px 200px 100px;
+        grid-template-rows: 80px 120px;
+        grid-gap: 10px;
+}
+
+.grid-item--big {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
