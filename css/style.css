@@ -4,7 +4,7 @@
     font-size: 16px;
     line-height: 1.5;
     background-color: burlywood;
-    height: 100vh;
+    height: auto;
 }
 
 
@@ -69,18 +69,91 @@
 
 .fr__container {
     display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 3fr;
-        gap: 1rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
 }
 
 .fr__container-item {
     background-color: #f1f1f1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        font-weight: bold;
-        color: #444;
-        border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    border: 1px solid #ccc;
+}
+
+.mix-units {
+    padding: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.mix-units__title {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.mix-units__description {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.mix-units__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
+}
+
+.mix-units__container-item {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    border: 1px solid #ccc;
+}
+
+
+.repeat {
+    padding: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.repeat__title {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.repeat__description {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.repeat__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 1rem;
+}
+
+.repeat__container-item {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    border: 1px solid #ccc;
 }
