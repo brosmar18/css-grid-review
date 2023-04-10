@@ -486,6 +486,35 @@ gap: 10px;
         <div class="grid-section__container-item">10</div>
     </div>
 </section>
+<section class="grid-section">
+    <h2 class="grid-section__title">Controlling Grid Item Placement with grid-auto-flow: dense</h2>
+    <p class="grid-section__description">This code creates a grid container with a width of 500px and three rows,
+        and sets the grid-auto-flow property to dense. This means that new grid items will be placed based on available
+        space, filling any gaps left by previous grid items. The order of the items may not follow the source order
+        to fill gaps and minimize empty spaces.</p>
+    <pre class="grid-section__code">
+.grid-section__container-auto-flow-dense {
+    display: grid;
+    width: 500px;
+    grid-template-rows: repeat(3, 100px);
+    grid-auto-flow: dense;
+    gap: 10px;
+}
+    </pre>
+    <div class="grid-section__container-auto-flow-dense">
+        <div class="grid-section__container-item">1</div>
+        <div class="grid-section__container-item">2</div>
+        <div class="grid-section__container-item">3</div>
+        <div class="grid-section__container-item">4</div>
+        <div class="grid-section__container-item">5</div>
+        <div class="grid-section__container-item">6</div>
+        <div class="grid-section__container-item">7</div>
+        <div class="grid-section__container-item">8</div>
+        <div class="grid-section__container-item">9</div>
+        <div class="grid-section__container-item">10</div>
+    </div>
+</section>
+
     </main>
     <footer class="footer"></footer>
     </div>
