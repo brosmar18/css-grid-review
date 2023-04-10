@@ -193,3 +193,39 @@
     color: #444;
     border: 1px solid #ccc;
 }
+
+.grid-column-gap {
+    padding: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.grid-column-gap__title {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.grid-column-gap__description {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.grid-column-gap__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    column-gap: 2rem;
+}
+
+.grid-column-gap__container-item {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    border: 1px solid #ccc;
+}
