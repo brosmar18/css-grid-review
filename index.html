@@ -12,135 +12,146 @@
 
 <body>
     <div class="page">
-    <section class="fixed-container">
-        <h2 class="fixed-container__title">Fixed size Colummns and Rows</h2>
-        <p class="fixed-container__description">This code creates a grid container with three columns of 200px, 300px,
-            and 150px width, and two rows of 100px and 200px height</p>
+        <section class="fixed-container">
+            <h2 class="fixed-container__title">Fixed size Colummns and Rows</h2>
+            <p class="fixed-container__description">This code creates a grid container with three columns of 200px,
+                300px,
+                and 150px width, and two rows of 100px and 200px height</p>
             <pre class="fixed-container__code">
             .grid-template-columns: 200px 300px 150px;
             .grid-template-rows: 100px 200px;
                 </pre>
-        <div class="fixed-container__box">
-            <div class="grid-container__box-item">1</div>
-            <div class="grid-container__box-item">2</div>
-            <div class="grid-container__box-item">3</div>
-            <div class="grid-container__box-item">4</div>
-            <div class="grid-container__box-item">5</div>
-            <div class="grid-container__box-item">6</div>
-        </div>
-    </section>
-    <section class="fr">
-        <h2 class="fr__title">Proportional Columns and Rows Using Fr</h2>
-        <p class="fr__description">The container is divided into three columns, where the middle column takes up twice the available space compared to the
-        other two columns. There are two rows, with the second row taking up three times the space of the first row.</p>
+            <div class="fixed-container__box">
+                <div class="grid-container__box-item">1</div>
+                <div class="grid-container__box-item">2</div>
+                <div class="grid-container__box-item">3</div>
+                <div class="grid-container__box-item">4</div>
+                <div class="grid-container__box-item">5</div>
+                <div class="grid-container__box-item">6</div>
+            </div>
+        </section>
+        <section class="fr">
+            <h2 class="fr__title">Proportional Columns and Rows Using Fr</h2>
+            <p class="fr__description">The container is divided into three columns, where the middle column takes up
+                twice the available space compared to the
+                other two columns. There are two rows, with the second row taking up three times the space of the first
+                row.</p>
             <pre class="fr__code">
             .grid-template-columns: 1fr 2fr 1fr;
             .grid-template-rows: 1fr 3fr;
                 </pre>
-        <div class="fr__container">
-            <div class="fr__container-item">1</div>
-            <div class="fr__container-item">2</div>
-            <div class="fr__container-item">3</div>
-            <div class="fr__container-item">4</div>
-            <div class="fr__container-item">5</div>
-            <div class="fr__container-item">6</div>
-        </div>
-    </section>
-    <section class="mix-units">
-        <h2 class="mix-units__title">Mixing Units for Columns and Rows</h2>
-        <p class="mix-units__description">This code creates a grid container with three columns: the first column has a fixed width of 150px, the second column
-        takes up the remaining available space, and the third column takes up 20% of the container's width. The container has
-        two rows, each taking up 50% of its height.</p>
-        <pre class="mix-units__code">
+            <div class="fr__container">
+                <div class="fr__container-item">1</div>
+                <div class="fr__container-item">2</div>
+                <div class="fr__container-item">3</div>
+                <div class="fr__container-item">4</div>
+                <div class="fr__container-item">5</div>
+                <div class="fr__container-item">6</div>
+            </div>
+        </section>
+        <section class="mix-units">
+            <h2 class="mix-units__title">Mixing Units for Columns and Rows</h2>
+            <p class="mix-units__description">This code creates a grid container with three columns: the first column
+                has a fixed width of 150px, the second column
+                takes up the remaining available space, and the third column takes up 20% of the container's width. The
+                container has
+                two rows, each taking up 50% of its height.</p>
+            <pre class="mix-units__code">
         .grid-template-columns: 150px 1fr 20%;
         .grid-template-rows: 50% 50%;
             </pre>
-        <div class="mix-units__container">
-            <div class="mix-units__container-item">1</div>
-            <div class="mix-units__container-item">2</div>
-            <div class="mix-units__container-item">3</div>
-            <div class="mix-units__container-item">4</div>
-            <div class="mix-units__container-item">5</div>
-            <div class="mix-units__container-item">6</div>
-        </div>
-    </section>
-    <section class="repeat">
-        <h2 class="repeat__title">Using the repeat() Function</h2>
-        <p class="repeat__description">The repeat() function is used to create three columns, each with equal width, and four rows, each with a height of
-        100px.</p>
-        <pre class="repeat__code">
+            <div class="mix-units__container">
+                <div class="mix-units__container-item">1</div>
+                <div class="mix-units__container-item">2</div>
+                <div class="mix-units__container-item">3</div>
+                <div class="mix-units__container-item">4</div>
+                <div class="mix-units__container-item">5</div>
+                <div class="mix-units__container-item">6</div>
+            </div>
+        </section>
+        <section class="repeat">
+            <h2 class="repeat__title">Using the repeat() Function</h2>
+            <p class="repeat__description">The repeat() function is used to create three columns, each with equal width,
+                and four rows, each with a height of
+                100px.</p>
+            <pre class="repeat__code">
         .grid-template-columns: repeat(3, 1fr);
         .grid-template-rows: repeat(4, 100px);
             </pre>
-        <div class="repeat__container">
-            <div class="repeat__container-item">1</div>
-            <div class="repeat__container-item">2</div>
-            <div class="repeat__container-item">3</div>
-            <div class="repeat__container-item">4</div>
-            <div class="repeat__container-item">5</div>
-            <div class="repeat__container-item">6</div>
-            <div class="repeat__container-item">7</div>
-            <div class="repeat__container-item">8</div>
-            <div class="repeat__container-item">9</div>
-            <div class="repeat__container-item">10</div>
-            <div class="repeat__container-item">11</div>
-            <div class="repeat__container-item">12</div>
-        </div>
-    </section>
-    <section class="grid-gap">
-        <h2 class="grid-gap__title">Using grid-gap</h2>
-        <p class="grid-gap__description">This section demonstrates the grid-gap property to create gaps between grid items
-            for both rows and columns. A gap of 2rem is declared.</p>
+            <div class="repeat__container">
+                <div class="repeat__container-item">1</div>
+                <div class="repeat__container-item">2</div>
+                <div class="repeat__container-item">3</div>
+                <div class="repeat__container-item">4</div>
+                <div class="repeat__container-item">5</div>
+                <div class="repeat__container-item">6</div>
+                <div class="repeat__container-item">7</div>
+                <div class="repeat__container-item">8</div>
+                <div class="repeat__container-item">9</div>
+                <div class="repeat__container-item">10</div>
+                <div class="repeat__container-item">11</div>
+                <div class="repeat__container-item">12</div>
+            </div>
+        </section>
+        <section class="grid-gap">
+            <h2 class="grid-gap__title">Using grid-gap</h2>
+            <p class="grid-gap__description">This section demonstrates the grid-gap property to create gaps between grid
+                items
+                for both rows and columns. A gap of 2rem is declared.</p>
             <pre class="grid-gap__code">
             gap: 2rem;
                 </pre>
-        <div class="grid-gap__container">
-            <div class="grid-gap__container-item">1</div>
-            <div class="grid-gap__container-item">2</div>
-            <div class="grid-gap__container-item">3</div>
-            <div class="grid-gap__container-item">4</div>
-            <div class="grid-gap__container-item">5</div>
-            <div class="grid-gap__container-item">6</div>
-        </div>
-    </section>
-    <section class="grid-column-gap">
-        <h2 class="grid-column-gap__title">Using grid-column-gap</h2>
-        <p class="grid-column-gap__description">This section demonstrates the grid-column-gap property to create gaps
-            between grid items only for columns. A column gap of 2rem is declared.</p>
+            <div class="grid-gap__container">
+                <div class="grid-gap__container-item">1</div>
+                <div class="grid-gap__container-item">2</div>
+                <div class="grid-gap__container-item">3</div>
+                <div class="grid-gap__container-item">4</div>
+                <div class="grid-gap__container-item">5</div>
+                <div class="grid-gap__container-item">6</div>
+            </div>
+        </section>
+        <section class="grid-column-gap">
+            <h2 class="grid-column-gap__title">Using grid-column-gap</h2>
+            <p class="grid-column-gap__description">This section demonstrates the grid-column-gap property to create
+                gaps
+                between grid items only for columns. A column gap of 2rem is declared.</p>
             <pre class="grid-column-gap__code">
             column-gap: 2rem;
                 </pre>
-        <div class="grid-column-gap__container">
-            <div class="grid-column-gap__container-item">1</div>
-            <div class="grid-column-gap__container-item">2</div>
-            <div class="grid-column-gap__container-item">3</div>
-            <div class="grid-column-gap__container-item">4</div>
-            <div class="grid-column-gap__container-item">5</div>
-            <div class="grid-column-gap__container-item">6</div>
-        </div>
-    </section>
-    <section class="grid-row-gap">
-        <h2 class="grid-row-gap__title">Using grid-row-gap</h2>
-        <p class="grid-row-gap__description">This section demonstrates the grid-row-gap property to create gaps between grid
-            items only for rows.</p>
+            <div class="grid-column-gap__container">
+                <div class="grid-column-gap__container-item">1</div>
+                <div class="grid-column-gap__container-item">2</div>
+                <div class="grid-column-gap__container-item">3</div>
+                <div class="grid-column-gap__container-item">4</div>
+                <div class="grid-column-gap__container-item">5</div>
+                <div class="grid-column-gap__container-item">6</div>
+            </div>
+        </section>
+        <section class="grid-row-gap">
+            <h2 class="grid-row-gap__title">Using grid-row-gap</h2>
+            <p class="grid-row-gap__description">This section demonstrates the grid-row-gap property to create gaps
+                between grid
+                items only for rows.</p>
             <pre class="grid-row-gap__code">
             row-gap: 2rem;
                 </pre>
-        <div class="grid-row-gap__container">
-            <div class="grid-row-gap__container-item">1</div>
-            <div class="grid-row-gap__container-item">2</div>
-            <div class="grid-row-gap__container-item">3</div>
-            <div class="grid-row-gap__container-item">4</div>
-            <div class="grid-row-gap__container-item">5</div>
-            <div class="grid-row-gap__container-item">6</div>
-        </div>
-    </section>
-    <section class="repeat-mixed">
-        <h2 class="repeat-mixed__title">Using repeat() with Mixed Values for Rows and Columns</h2>
-        <p class="repeat-mixed__description">This example demonstrates a grid with five columns and three rows: the first
-            column has a width of 100px, the last one has a width of 200px, and the three middle columns have auto width.
-            All three rows have a height of 100px.</p>
-        <pre class="repeat-mixed__code">
+            <div class="grid-row-gap__container">
+                <div class="grid-row-gap__container-item">1</div>
+                <div class="grid-row-gap__container-item">2</div>
+                <div class="grid-row-gap__container-item">3</div>
+                <div class="grid-row-gap__container-item">4</div>
+                <div class="grid-row-gap__container-item">5</div>
+                <div class="grid-row-gap__container-item">6</div>
+            </div>
+        </section>
+        <section class="repeat-mixed">
+            <h2 class="repeat-mixed__title">Using repeat() with Mixed Values for Rows and Columns</h2>
+            <p class="repeat-mixed__description">This example demonstrates a grid with five columns and three rows: the
+                first
+                column has a width of 100px, the last one has a width of 200px, and the three middle columns have auto
+                width.
+                All three rows have a height of 100px.</p>
+            <pre class="repeat-mixed__code">
     &lt;style&gt;
     .repeat-mixed__container {
         display: grid;
@@ -150,24 +161,68 @@
     }
     &lt;/style&gt;
         </pre>
-        <div class="repeat-mixed__container">
-            <div class="repeat-mixed__container-item">1</div>
-            <div class="repeat-mixed__container-item">2</div>
-            <div class="repeat-mixed__container-item">3</div>
-            <div class="repeat-mixed__container-item">4</div>
-            <div class="repeat-mixed__container-item">5</div>
-            <div class="repeat-mixed__container-item">6</div>
-            <div class="repeat-mixed__container-item">7</div>
-            <div class="repeat-mixed__container-item">8</div>
-            <div class="repeat-mixed__container-item">9</div>
-            <div class="repeat-mixed__container-item">10</div>
-            <div class="repeat-mixed__container-item">11</div>
-            <div class="repeat-mixed__container-item">12</div>
-            <div class="repeat-mixed__container-item">13</div>
-            <div class="repeat-mixed__container-item">14</div>
-            <div class="repeat-mixed__container-item">15</div>
-        </div>
-    </section>
+            <div class="repeat-mixed__container">
+                <div class="repeat-mixed__container-item">1</div>
+                <div class="repeat-mixed__container-item">2</div>
+                <div class="repeat-mixed__container-item">3</div>
+                <div class="repeat-mixed__container-item">4</div>
+                <div class="repeat-mixed__container-item">5</div>
+                <div class="repeat-mixed__container-item">6</div>
+                <div class="repeat-mixed__container-item">7</div>
+                <div class="repeat-mixed__container-item">8</div>
+                <div class="repeat-mixed__container-item">9</div>
+                <div class="repeat-mixed__container-item">10</div>
+                <div class="repeat-mixed__container-item">11</div>
+                <div class="repeat-mixed__container-item">12</div>
+                <div class="repeat-mixed__container-item">13</div>
+                <div class="repeat-mixed__container-item">14</div>
+                <div class="repeat-mixed__container-item">15</div>
+            </div>
+        </section>
+
+        <section class="fract-mixed">
+            <h2 class="fract-mixed__title">Using fractions and fixed values in Grids</h2>
+            <p class="fract-mixed__description">This example demonstrates a grid with six columns and four rows. The
+                first
+                column has a fixed width of 100px, and the last column has a fixed width of 200px. The four middle
+                columns take
+                up an equal fraction of the remaining space. All four rows have a height of 100px.</p>
+            <pre class="fract-mixed__code">
+                        .fract-mixed__container {
+                        display: grid;
+                        grid-template-columns: 100px repeat(4, 1fr) 200px;
+                        grid-template-rows: repeat(4, 100px);
+                        gap: 1rem;
+                        }
+                            </pre>
+            <div class="fract-mixed__container">
+                <div class="fract-mixed__container-item">1</div>
+                <div class="fract-mixed__container-item">2</div>
+                <div class="fract-mixed__container-item">3</div>
+                <div class="fract-mixed__container-item">4</div>
+                <div class="fract-mixed__container-item">5</div>
+                <div class="fract-mixed__container-item">6</div>
+                <div class="fract-mixed__container-item">7</div>
+                <div class="fract-mixed__container-item">8</div>
+                <div class="fract-mixed__container-item">9</div>
+                <div class="fract-mixed__container-item">10</div>
+                <div class="fract-mixed__container-item">11</div>
+                <div class="fract-mixed__container-item">12</div>
+                <div class="fract-mixed__container-item">13</div>
+                <div class="fract-mixed__container-item">14</div>
+                <div class="fract-mixed__container-item">15</div>
+                <div class="fract-mixed__container-item">16</div>
+                <div class="fract-mixed__container-item">17</div>
+                <div class="fract-mixed__container-item">18</div>
+                <div class="fract-mixed__container-item">19</div>
+                <div class="fract-mixed__container-item">20</div>
+                <div class="fract-mixed__container-item">21</div>
+                <div class="fract-mixed__container-item">22</div>
+                <div class="fract-mixed__container-item">23</div>
+                <div class="fract-mixed__container-item">24</div>
+            </div>
+        </section>
+
 
 
 
