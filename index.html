@@ -110,6 +110,42 @@
             <div class="grid-row-gap__container-item">6</div>
         </div>
     </section>
+    <section class="repeat-mixed">
+        <h2 class="repeat-mixed__title">Using repeat() with Mixed Values for Rows and Columns</h2>
+        <p class="repeat-mixed__description">This example demonstrates a grid with five columns and three rows: the first
+            column has a width of 100px, the last one has a width of 200px, and the three middle columns have auto width.
+            All three rows have a height of 100px.</p>
+        <pre class="repeat-mixed__code">
+    &lt;style&gt;
+    .repeat-mixed__container {
+        display: grid;
+        grid-template-columns: 100px repeat(3, auto) 200px;
+        grid-template-rows: repeat(3, 100px);
+        gap: 1rem;
+    }
+    &lt;/style&gt;
+        </pre>
+        <div class="repeat-mixed__container">
+            <div class="repeat-mixed__container-item">1</div>
+            <div class="repeat-mixed__container-item">2</div>
+            <div class="repeat-mixed__container-item">3</div>
+            <div class="repeat-mixed__container-item">4</div>
+            <div class="repeat-mixed__container-item">5</div>
+            <div class="repeat-mixed__container-item">6</div>
+            <div class="repeat-mixed__container-item">7</div>
+            <div class="repeat-mixed__container-item">8</div>
+            <div class="repeat-mixed__container-item">9</div>
+            <div class="repeat-mixed__container-item">10</div>
+            <div class="repeat-mixed__container-item">11</div>
+            <div class="repeat-mixed__container-item">12</div>
+            <div class="repeat-mixed__container-item">13</div>
+            <div class="repeat-mixed__container-item">14</div>
+            <div class="repeat-mixed__container-item">15</div>
+        </div>
+    </section>
+
+
+
     </div>
 
 </body>
