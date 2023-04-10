@@ -268,12 +268,13 @@ gap: 1rem;
             height. The first item of the grid-container is set to take up two columns by using the grid-column-start property set
             to 1 and the grid-column-end property set to 3.</p>
             <pre class="grid-section__code">
-                .grid-container {
-                    display: grid;
-                    grid-template-columns: 150px 200px 100px;
-                    grid-template-rows: 80px 120px;
-                    grid-gap: 10px;
+                .grid-section__container-comumn-start-end {
+                display: grid;
+                grid-template-columns: 150px 200px 100px;
+                grid-template-rows: 80px 120px;
+                grid-gap: 10px;
                 }
+
                 .grid-item--big {
                 grid-column-start: 1;
                 grid-column-end: 3;
@@ -281,6 +282,69 @@ gap: 1rem;
             </pre>
             <div class="grid-section__container-comumn-start-end">
                 <div class="grid-section__container-item grid-item--big">1</div>
+                <div class="grid-section__container-item">2</div>
+                <div class="grid-section__container-item">3</div>
+                <div class="grid-section__container-item">4</div>
+                <div class="grid-section__container-item">5</div>
+                <div class="grid-section__container-item">6</div>
+            </div>
+        </section>
+        <section class="grid-section">
+            <h2 class="grid-section__title">Using grid-row-start and grid-row-end</h2>
+            <p class="grid-section__description">This code creates a grid container with four columns of 150px width, and three
+                rows of 100px,
+                200px, and 80px height. The second item of the grid-container is set to take up two rows by using the
+                grid-row-start property
+                set to 1 and the grid-row-end property set to 3.</p>
+            <pre class="grid-section__code">
+                .grid-section__container-row-start-end {
+                display: grid;
+                grid-template-columns: repeat(4, 150px);
+                grid-template-rows: 100px 200px 80px;
+                grid-gap: 10px;
+                }
+
+                .grid-item--big2 {
+                grid-row-start: 1;
+                grid-row-end: 3;
+                }
+            </pre>
+            <div class="grid-section__container-row-start-end">
+                <div class="grid-section__container-item">1</div>
+                <div class="grid-section__container-item grid-item--big2">2</div>
+                <div class="grid-section__container-item">3</div>
+                <div class="grid-section__container-item">4</div>
+                <div class="grid-section__container-item">5</div>
+                <div class="grid-section__container-item">6</div>
+                <div class="grid-section__container-item">7</div>
+                <div class="grid-section__container-item">8</div>
+                <div class="grid-section__container-item">9</div>
+                <div class="grid-section__container-item">10</div>
+                <div class="grid-section__container-item">11</div>
+                <div class="grid-section__container-item">12</div>
+            </div>
+        </section>
+        <section class="grid-section">
+            <h2 class="grid-section__title">Using the span Keyword</h2>
+            <p class="grid-section__description">This code creates a grid container with three columns of 200px, 300px, and
+                150px width, and two rows of 100px and 200px height. The first item of the grid-container is set to take up two
+                columns and two rows by using the span keyword with a value of 2 set to the grid-column property and grid-row
+                property respectively.</p>
+            <pre class="grid-section__code">
+                        .grid-section__container-span-keyword {
+                        display: grid;
+                        grid-template-columns: 200px 300px 150px;
+                        grid-template-rows: 100px 200px;
+                        grid-gap: 10px;
+                        }
+
+                        .grid-item--big3 {
+                        grid-column: 1 / span 2;
+                        grid-row: 1 / span 2;
+                        }
+                    </pre>
+            <div class="grid-section__container-span-keyword">
+                <div class="grid-section__container-item grid-item--big3">1</div>
                 <div class="grid-section__container-item">2</div>
                 <div class="grid-section__container-item">3</div>
                 <div class="grid-section__container-item">4</div>
